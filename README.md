@@ -53,8 +53,8 @@ Steps for conducting a hypothesis test:
 
 **The Hypothesises**  
 
-$H_0$: There is `no difference` in the average fare amount between customers who use credit cards and customers who use cash.  
-$H_A$: There is `a difference` in the average fare amount between customers who use credit cards and customers who use cash.  
+H0: There is `no difference` in the average fare amount between customers who use credit cards and customers who use cash.  
+H1: There is `a difference` in the average fare amount between customers who use credit cards and customers who use cash.  
 
 Choose `5% as the significance level` and proceed with a two-sample t-test.
 

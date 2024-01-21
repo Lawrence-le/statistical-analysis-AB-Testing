@@ -30,3 +30,50 @@ To apply descriptive statistics and hypothesis testing in Python. The goal for t
 * What key business insight(s) emerged from the A/B test.
 
 * What are the proposed business recommendations based on the results.
+
+Shows how many payments are there for each payment type
+![image](https://github.com/Lawrence-le/statistical-analysis-AB-Testing/assets/151991077/3bf56947-fa7e-48e9-9fb7-0b6c7d8a49f0)
+
+Shows the mean amount for each payment type
+![image](https://github.com/Lawrence-le/statistical-analysis-AB-Testing/assets/151991077/e37a43ce-9fb8-450c-a87a-48d375300d7e)
+
+### Hypothesis testing
+
+**Null hypothesis**: There is no difference in average fare between customers who use credit cards and customers who use cash.  
+**Alternative hypothesis**: There is a difference in average fare between customers who use credit cards and customers who use cash
+
+**Objective:** To conduct a two-sample t-test.  
+
+Steps for conducting a hypothesis test: 
+
+1.   State the null hypothesis and the alternative hypothesis
+2.   Choose a signficance level
+3.   Find the p-value
+4.   Reject or fail to reject the null hypothesis 
+
+**The Hypothesises**  
+
+$H_0$: There is `no difference` in the average fare amount between customers who use credit cards and customers who use cash.  
+$H_A$: There is `a difference` in the average fare amount between customers who use credit cards and customers who use cash.  
+
+Choose `5% as the significance level` and proceed with a two-sample t-test.
+
+t-statistic: 6.87%  
+P-value: 0.0000000007%
+
+There are two main rules for drawing a conclusion about a hypothesis test:   
+•	If `p-value` < `significance level`, **reject** the null hypothesis.  
+•	If `p-value` > `significance level`, **fail to reject** the null hypothesis.    
+
+In this scenario, the p-value of 0.0000000007% is < significance level of 5%  
+So we **reject** the null hypothesis
+
+We can conclude based on the hypothesis testing that there is a `statistically significant difference` in the average fare amount between customers who use credit cards and customers who use cash.
+
+### What are the proposed business recommendations based on the results
+
+1.   The key business insight is that encouraging customers to pay with credit cards can generate more revenue for taxi cab drivers. 
+
+2.   This project requires an assumption that passengers were forced to pay one way or the other, and that once informed of this requirement, they always complied with it. The data was not collected this way; so, an assumption had to be made to randomly group data entries to perform an A/B test. This dataset does not account for other likely explanations. For example, riders might not carry lots of cash, so it's easier to pay for longer/farther trips with a credit card. In other words, it's far more likely that fare amount determines payment type, rather than vice versa. 
+
+
